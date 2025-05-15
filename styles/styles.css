@@ -4,6 +4,13 @@ padding: 0;
 box-sizing: border-box;
 }
 
+
+
+body {
+    font-family: 'Arial', serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
 img {
     display: block;
     max-width: 130%;
@@ -15,13 +22,13 @@ img {
     max-width: 1250px;
     margin: 0 auto;
     display: flex;
-    background-color: lightgreen
 }
 
 .left-side {
-    width: 350px;
+    max-width: 350px;
     padding: 40px 0 0 30px;
-    background-color: #3f6592;    
+    background-color: #3f6592; 
+    color: #fff;   
 }
 
 figure {
@@ -32,3 +39,115 @@ figure {
     border-radius: 50%;
     overflow: hidden;
 }
+
+.left-side__item {
+    margin-top: 40px;
+}
+
+.left-side__item-title { 
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border-bottom: 2px solid #fff;
+    font-size: 1.5rem;
+}
+
+.left-side__item-content {
+    padding-top: 30px;
+}
+.left-side__item-content-row{
+    margin-bottom: 20px;
+    padding-right: 40px;
+}
+
+.left-side__item-content-row span:first-child {
+    font-weight: bold;
+}
+.left-side__item-content-row span{
+    display: block;
+    
+}
+
+/* -----------------Main content----------------- */
+.right-side{
+    width     : 100%;
+    padding: 30px;
+}
+
+header.main-header h1{
+    font-size: 2.25rem;
+}
+
+
+.title{
+padding-bottom: 30px;
+}
+
+.title__main{
+    border-bottom: 2px solid #d5d5d5;
+}
+
+.title__section{
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.section{
+margin-top: 40px;
+}
+
+.section_row{
+    margin-top: 20px;
+}
+
+.section_row_subtitle{
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.section_row p{
+  margin-top: 15px;
+  font-size: 0.875rem;  
+}
+.projects{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+button{
+    min-width: 40px;
+    height: 40px;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #3f6592;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* ----------------End of main content----------------- */
+
+
+/* ------Start of global styles------ */
+.bold {
+    font-weight: bold;
+}
+
+.mb-6{
+    margin-bottom: 6px;
+}
+address {
+    font-style: normal;
+}
+.custom-link{
+    text-decoration: none;
+    color: #fff;
+}
+.d-flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+/* ----------End of global styles------ */
